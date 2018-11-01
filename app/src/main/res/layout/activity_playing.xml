@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PlayingActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorGrey"
+    android:layout_margin="@dimen/margin_padding"
+    android:padding="@dimen/margin_padding">
+
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/image_music_player"/>
+
+    <TextView
+        android:id="@+id/tv_name_song"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Name of Song"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_name_singer"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Singer"
+        android:textSize="@dimen/margin_padding"/>
+
+    <SeekBar
+        android:id="@+id/sb_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/tv_start_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_end_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:33"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause_button" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

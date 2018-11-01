@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_padding">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tv_name_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_name_music"
+        android:textSize="@dimen/size_textview"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_marginLeft="@dimen/margin_padding"/>
+
+    <TextView
+        android:id="@+id/tv_name_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_name_singer"
+        android:textSize="@dimen/size_textview"
+        android:layout_toRightOf="@+id/iv_image"
+        android:layout_below="@+id/tv_name_music"
+        android:layout_marginLeft="@dimen/margin_padding" />
+
+</RelativeLayout>

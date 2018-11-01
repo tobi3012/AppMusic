@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.NotificationMusic"
+    android:layout_margin="@dimen/margin_padding"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_name_song_noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_name_music" />
+
+        <TextView
+            android:id="@+id/tv_name_singer_noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_name_singer" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <!--<ImageView
+            android:id="@+id/iv_previous_noti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/previous_button_16"
+            android:layout_weight="1"/>-->
+
+        <ImageView
+            android:id="@+id/iv_play_pause_noti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_button_16"
+            android:layout_weight="1"/>
+
+        <!--<ImageView
+            android:id="@+id/iv_next_noti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next_button_16"
+            android:layout_weight="1"/>-->
+
+        <ImageView
+            android:id="@+id/iv_cancel_noti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancel_button_16"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_album_noti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music_player_icon"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

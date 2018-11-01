@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="textview_name_music">Song name</string>
+    <string name="textview_name_singer">Singer</string>
+</resources>
